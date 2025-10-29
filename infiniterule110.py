@@ -34,8 +34,10 @@ def main() -> None:
     for i in range(j):
         pos.bits = infinitestep(pos.bits, pos.llength, pos.rlength)
         print(bin(pos.bits)[3:])
+    input("Simulation finished, press enter to continue")
 
 if __name__ == "__main__":
     main()
 
 #maybe i improve this with (~x)>>1&x|x^(x<<1)
+
